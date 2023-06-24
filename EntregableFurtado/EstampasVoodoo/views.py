@@ -29,3 +29,16 @@ def setCliente(request):
     else:
         miFormulario = formSetCliente()
     return render(request, "EstampasVoodoo/setCliente.html", {"miFormulario":miFormulario})
+
+def getCliente(request):
+    return render(request, "EstampasVoodoo/getCliente.html")
+
+def searchCliente(request):
+    if request.GET["nombre"]:
+        nombre = request.GET["nombre"]
+        clientes = Cliente.objects.filter(nombre = nombre)
+        return render(request, "EstampasVoodoo/getCliente.html", {"clientes":clientes})
+    else:
+        respuesta = "No se enviaron datos"
+    
+    return HttpResponse(respuesta)
