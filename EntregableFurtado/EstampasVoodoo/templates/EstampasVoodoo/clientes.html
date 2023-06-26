@@ -1,18 +1,15 @@
 <div>
-    {% extends "EstampasVoodoo/inicio.html" %}
+    {% extends "EstampasVoodoo/setCliente.html" %}
     {% load static %}
-    
         {% block bloqueDinamico %}
-        <p>Hola soy un cliente</p>
-        <!--
-        <div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'setCliente' %}">Crear cliente</a></li>
+                    <li><a href="{% url 'getCliente' %}">Buscar cliente</a></li>
+                </ul>
             </div>
-        </div>
-        -->
+            <!--
+            <p>Hola soy un cliente</p>
+            -->
         {% endblock %}
 </div>

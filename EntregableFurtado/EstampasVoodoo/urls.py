@@ -2,7 +2,7 @@ from django.urls import path
 from EstampasVoodoo.views import *
 
 urlpatterns = [
-    path('inicio/', inicio),
+    path('inicio/', inicio, name="Inicio"),
     path('clientes/', clientes, name="Clientes"),
     path('remeras/', remeras,name="Remeras"),
     path('tazas/', tazas, name="Tazas"),
