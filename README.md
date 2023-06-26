@@ -1,6 +1,8 @@
 # Tercera-pre-entrega-Furtado
 Tercera Preentrega CoderHouse Python #54485
 
+El proyecto es visible y funcional iniciando desde '/EstampasVoodoo/inicio/'
+
 1- La herencia de HTML funciona tomando "inicio.html" como padre, que pasa el navbar, asi como el footer y el copyright al resto
 2- Hay 3 clases diferentes en models:
 "Cliente" que toma 4 parámetros,
