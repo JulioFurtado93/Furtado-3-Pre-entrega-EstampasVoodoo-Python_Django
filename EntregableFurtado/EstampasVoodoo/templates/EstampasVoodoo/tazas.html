@@ -3,6 +3,23 @@
     {% load static %}
     
         {% block bloqueDinamico %}
-            <p>Hola soy una taza</p>
+            <!-- about section start -->
+            <div class="about_section layout_padding">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="about_taital_main">
+                            <div class="about_taital">Tazas</div>
+                            <p class="about_text">$9.999-</p>
+                            <p class="about_text">Descripción del artículo</p>
+                            <div class="read_bt"><a href="#">Ver mas</a></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about_img"><img src="{% static 'EstampasVoodoo/assets/testTaza.png'%}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         {% endblock %}
 </div>
